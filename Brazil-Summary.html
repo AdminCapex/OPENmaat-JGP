@@ -36,6 +36,12 @@
   .nav .report-title .eyebrow{display:block;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent-2);font-weight:600;margin-bottom:2px}
   .nav .report-title .name{font-size:1rem;font-weight:600;color:#fff;letter-spacing:.2px}
 
+  .preportada-wrap{width:100%;margin-top:68px;background:var(--hero-bg);display:block;line-height:0}
+  .preportada-img{width:100%;height:auto;display:block}
+  @media print{
+    .preportada-wrap{margin-top:0 !important;break-after:page}
+  }
+
   .hero{padding:150px 48px 110px;background:radial-gradient(1100px 500px at 85% 20%,rgba(91,139,255,.25),transparent 60%),radial-gradient(900px 400px at 10% 80%,rgba(61,109,255,.18),transparent 60%),linear-gradient(180deg,var(--hero-bg),var(--hero-bg-2));color:#fff}
   .hero-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
   .hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);color:#c8d6ff;padding:7px 14px;border-radius:999px;font-size:.78rem;font-weight:600;margin-bottom:24px;border:1px solid rgba(255,255,255,.15)}
@@ -810,6 +816,10 @@
     <span class="name">The Global Trade Platform</span>
   </div>
 </nav>
+
+<div class="preportada-wrap">
+  <img src="Preportada.jpg" alt="Preportada — Tokenizing Real-World Value" class="preportada-img">
+</div>
 
 <header class="hero" id="sec-hero">
   <!-- Header visible SOLO al imprimir (solo en portada) -->
