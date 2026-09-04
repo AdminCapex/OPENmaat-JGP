@@ -802,8 +802,8 @@
 </style>
 </head>
 <body>
-<div style="width:100%;background:#0a1f44"><img src="Preportada.jpg" alt="Preportada" style="width:100%;height:auto;display:block"></div>
-<nav class="nav" id="nav">
+<div id="preportada-wrap" style="width:100%;background:#0a1f44;display:flex;justify-content:center;padding:20px 0"><img src="Preportada.jpg" alt="Preportada" style="max-width:100%;height:auto;display:block"></div>
+<nav class="nav" id="nav" style="display:none">
   <div class="logo">#OPENmaat</div>
   <div class="report-title">
     <span class="eyebrow">Executive Summary</span>
@@ -1551,6 +1551,11 @@
     if(e.target.closest('.tip-card')) return;
     window.print();
   });
+  const preportada = document.getElementById('preportada-wrap');
+const navEl = document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  navEl.style.display = window.scrollY > preportada.offsetHeight - 60 ? 'flex' : 'none';
+});
 </script>
 
 </body>
