@@ -2005,10 +2005,10 @@
     if(e.target.closest('.tip-card')) return;
     window.print();
   });
-  const preportada = document.getElementById('cover-page');
+  const coverPage = document.getElementById('cover-page');
 const navEl = document.getElementById('nav');
 window.addEventListener('scroll',()=>{
-  navEl.style.display = window.scrollY > preportada.offsetHeight - 60 ? 'flex' : 'none';
+  navEl.style.display = window.scrollY > coverPage.offsetHeight - 60 ? 'flex' : 'none';
 });
 </script>
 
